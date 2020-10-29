@@ -345,7 +345,9 @@ app.post('/updatemeds',function(req,res){
         }
     })
 })
-
+//====================================
+//====================================
+//====================================
 app.post('/deletemeds',function(req,res){
     let sql='DELETE FROM medicines WHERE med_name=\''+req.body.medname+'\' AND company_name=\''+companyis+'\'';
     let query=db.query(sql,function(err){
